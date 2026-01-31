@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewBuff", menuName = "Scriptable Objects/Buff Data")]
-public class Buff : ScriptableObject
+public class BuffData : ScriptableObject
 {
     [Header("General")]
     public string Name;
@@ -28,5 +28,6 @@ public class Buff : ScriptableObject
     public int MaxStacks;
     public int ExtraDamagePerStack;
     public int BonusCandyPerDefeatedEnemy;
-    public int BonusDamagePerUnit;
+    public int BonusDamagePerUnitInFaction;
+    public float LifestealPercentage;
 }

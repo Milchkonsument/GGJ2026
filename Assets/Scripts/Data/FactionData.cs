@@ -5,7 +5,7 @@ public class FactionData : ScriptableObject
 {
     public string Name;
     public Sprite Icon;
-    public Buff SecondUnitBuff;
-    public Buff FourthUnitBuff;
-    public Buff SixthUnitBuff;
+    public BuffData SecondUnitBuff;
+    public BuffData FourthUnitBuff;
+    public BuffData SixthUnitBuff;
 }
