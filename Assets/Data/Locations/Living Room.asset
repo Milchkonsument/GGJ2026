@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21be3c1be9ec84d20af156e5b764b56a, type: 3}
+  m_Name: Living Room
+  m_EditorClassIdentifier: Assembly-CSharp::LocationData
+  Name: Living Room
+  subLocations:
+  - {fileID: 11400000, guid: f78c78b828fd049bb93bc27cbd853fcf, type: 2}
+  - {fileID: 11400000, guid: f85f0f65b0f5141b590bf31aa762eb44, type: 2}
+  - {fileID: 11400000, guid: 0a4a4f36cd1dd478a80d869d83d251a1, type: 2}
+  - {fileID: 11400000, guid: fc56fde92c2fe4ebf837822f8b4a8b44, type: 2}
+  - {fileID: 11400000, guid: 1d9a526aa62624784b09bec635b3e08d, type: 2}
+  - {fileID: 11400000, guid: 9d14eb00ed4de452f8f3c14f85e2848c, type: 2}
+  - {fileID: 11400000, guid: 1451b0ef6672048729cba3d515330994, type: 2}
+  - {fileID: 11400000, guid: 5756deb0831ec4301b2812e7e89780f4, type: 2}
+  - {fileID: 11400000, guid: decbe83c769d64627a8082da84310036, type: 2}
+  - {fileID: 11400000, guid: 3632b9538cbfa4002904889857861a09, type: 2}
+  - {fileID: 11400000, guid: 1d0269b617e2d45c6aa47c03b0c19901, type: 2}
+  - {fileID: 11400000, guid: c115fc4af04ac48c7b55c32db9b117e8, type: 2}
+  - {fileID: 11400000, guid: 6b37eb771809044148804f9719a7ca2b, type: 2}
+  - {fileID: 11400000, guid: 925546d54b05c4580a9e58e8b41aa7c7, type: 2}
+  - {fileID: 11400000, guid: 121f42adf071a4433a4c07c455866e5e, type: 2}

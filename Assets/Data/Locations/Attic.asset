@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21be3c1be9ec84d20af156e5b764b56a, type: 3}
+  m_Name: Attic
+  m_EditorClassIdentifier: Assembly-CSharp::LocationData
+  Name: Attic
+  subLocations:
+  - {fileID: 11400000, guid: 6b37eb771809044148804f9719a7ca2b, type: 2}
+  - {fileID: 11400000, guid: fc56fde92c2fe4ebf837822f8b4a8b44, type: 2}
+  - {fileID: 11400000, guid: 1d0269b617e2d45c6aa47c03b0c19901, type: 2}
+  - {fileID: 11400000, guid: c115fc4af04ac48c7b55c32db9b117e8, type: 2}
+  - {fileID: 11400000, guid: d6090c095b4b54cc983468a3bb47d8a0, type: 2}
+  - {fileID: 11400000, guid: 5e45faed97ef9421aa34f3605f40ce5d, type: 2}
