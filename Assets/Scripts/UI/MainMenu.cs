@@ -39,4 +39,9 @@ public class MainMenu : MonoBehaviour
         creditsPanel.SetActive(false);
         settingsPanel.SetActive(false);
     }
+
+    public void SetFullscreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
+    }
 }
