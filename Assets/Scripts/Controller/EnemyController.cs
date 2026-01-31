@@ -4,12 +4,12 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public EnemyData Data;
-    public int CurrentHealth;
+    public int CurrentMotivation = 0;
 
-    public bool IsAlive() => CurrentHealth > 0;
+    public bool IsAlive() => CurrentMotivation > 0;
     public bool IsDead() => !IsAlive();
 
-    public int GetCurrentMaxHealth()
+    public int GetCurrentMaxMotivation()
     {
         return Data.BaseStats.BaseMotivation;
     }
@@ -31,11 +31,11 @@ public class EnemyController : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        CurrentHealth -= damage;
+        CurrentMotivation -= damage;
         
-        if (CurrentHealth < 0)
+        if (CurrentMotivation < 0)
         {
-            CurrentHealth = 0;
+            CurrentMotivation = 0;
         }
     }
 

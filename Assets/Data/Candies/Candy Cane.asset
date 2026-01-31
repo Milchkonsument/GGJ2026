@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70acc673d7dce24a929b7baa4a9ccc3, type: 3}
   m_Name: Candy Cane
   m_EditorClassIdentifier: Assembly-CSharp::CandyData
-  Sprite: {fileID: 0}
+  Sprite: {fileID: -4239286347556128791, guid: f74e9a314fb18804f9da24b2e26e9e56, type: 3}
   MotivationGain: 5
   Rarity: {fileID: 11400000, guid: cc28fa241f430e54998d3570326b3090, type: 2}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fantasy
   m_EditorClassIdentifier: Assembly-CSharp::FactionData
   Name: Fantasy
-  Icon: {fileID: 0}
-  SecondUnitBuff: {fileID: 0}
-  FourthUnitBuff: {fileID: 0}
-  SixthUnitBuff: {fileID: 0}
+  Icon: {fileID: -555312304647852387, guid: 62a49a8be0aa6df42a41c627f64f2d36, type: 3}
+  SecondUnitBuff: {fileID: 11400000, guid: 03929b9c60323e44fb9653340f207f21, type: 2}
+  FourthUnitBuff: {fileID: 11400000, guid: 9a5735371a91f224abfda470a935849d, type: 2}
+  SixthUnitBuff: {fileID: 11400000, guid: 269f7db6e4e1a04448cb544e4ae7a74f, type: 2}

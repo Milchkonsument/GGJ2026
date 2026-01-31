@@ -6,14 +6,14 @@ using UnityEngine;
 using UnityEngine.Events;
 
 
-public class CombatManager : MonoBehaviour
+public class CombatController : Singleton<CombatController>
 {
-    [SerializeField, Range(.0f, 1.0f)] private float combatTickRate = .5f;
+    [SerializeField, Range(.0f, 1.0f)] private float CombatTickRate = .5f;
 
-UnityEvent<CharacterAttackEvent> OnCharacterAttack = new UnityEvent<CharacterAttackEvent>();
-UnityEvent<EnemyAttackEvent> OnEnemyAttack = new UnityEvent<EnemyAttackEvent>();
-UnityEvent OnCombatStart = new UnityEvent();
-UnityEvent OnCombatEnd = new UnityEvent();
+    public readonly UnityEvent<CharacterAttackEvent> OnCharacterAttack = new();
+    public readonly UnityEvent<EnemyAttackEvent> OnEnemyAttack = new();
+    public readonly UnityEvent OnCombatStart = new();
+    public readonly UnityEvent OnCombatEnd = new();
 
     public void FightAgainst(List<EnemyController> enemies)
     {
@@ -24,7 +24,7 @@ UnityEvent OnCombatEnd = new UnityEvent();
     {
         OnCombatStart.Invoke();
 
-        var tickInterval = new WaitForSeconds(combatTickRate);
+        var tickInterval = new WaitForSeconds(CombatTickRate);
         var playerParty = PlayerController.Instance.PartyMembers;
         
         while(playerParty.Any(m => m.IsAlive() ) && enemies.Any(e => e.IsAlive()))

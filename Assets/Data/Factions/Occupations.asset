@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Occupations
   m_EditorClassIdentifier: Assembly-CSharp::FactionData
   Name: Occupations
-  Icon: {fileID: 0}
-  SecondUnitBuff: {fileID: 0}
-  FourthUnitBuff: {fileID: 0}
-  SixthUnitBuff: {fileID: 0}
+  Icon: {fileID: 1654202145, guid: 62a49a8be0aa6df42a41c627f64f2d36, type: 3}
+  SecondUnitBuff: {fileID: 11400000, guid: 60399fa0b2246c843a830274e1bc4239, type: 2}
+  FourthUnitBuff: {fileID: 11400000, guid: f8a89b4f41322be4ea567ef68706fab9, type: 2}
+  SixthUnitBuff: {fileID: 11400000, guid: 9cead751c48cd2648b89a8d63b9fe0a1, type: 2}

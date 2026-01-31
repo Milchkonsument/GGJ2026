@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gaming
   m_EditorClassIdentifier: Assembly-CSharp::FactionData
   Name: Gaming
-  Icon: {fileID: 0}
-  SecondUnitBuff: {fileID: 0}
-  FourthUnitBuff: {fileID: 0}
-  SixthUnitBuff: {fileID: 0}
+  Icon: {fileID: 854427070, guid: 62a49a8be0aa6df42a41c627f64f2d36, type: 3}
+  SecondUnitBuff: {fileID: 11400000, guid: e1fe79f1b4482cd4ea46e867ffd5d66a, type: 2}
+  FourthUnitBuff: {fileID: 11400000, guid: b70ab57658cc7f846967331a27d71e27, type: 2}
+  SixthUnitBuff: {fileID: 11400000, guid: e0c1026a53472014bb2cc1cf466972ae, type: 2}

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b70acc673d7dce24a929b7baa4a9ccc3, type: 3}
   m_Name: Gummies
   m_EditorClassIdentifier: Assembly-CSharp::CandyData
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 8663601104585921489, guid: f74e9a314fb18804f9da24b2e26e9e56, type: 3}
   MotivationGain: 2
   Rarity: {fileID: 11400000, guid: 7183c3d06252aa14a8a3c6abf39c7483, type: 2}

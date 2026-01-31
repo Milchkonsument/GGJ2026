@@ -17,4 +17,4 @@ MonoBehaviour:
   Faction: {fileID: 11400000, guid: ac873c1d665458e459d63a2d459089f5, type: 2}
   Traits:
   - {fileID: 11400000, guid: c3aa51700f10d4f44867fe5bb17cfac2, type: 2}
-  UniqueBuff: {fileID: 0}
+  UniqueBuff: {fileID: 11400000, guid: 42544d83e082f0f438d83a24df801f75, type: 2}
