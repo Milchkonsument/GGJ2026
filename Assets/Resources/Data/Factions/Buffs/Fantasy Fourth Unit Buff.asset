@@ -34,5 +34,5 @@ MonoBehaviour:
   BonusDamagePerUnitInFaction: 0
   LifestealPercentage: 0
   DodgeRateBonusPercentage: 0
-  PlanningPhasePartyFinderPercentage: 0
+  PlanningPhasePartyFinderPercentage: 20
   BloodCandyGenerationOnKillingBlow: 0

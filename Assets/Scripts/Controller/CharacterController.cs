@@ -141,6 +141,11 @@ public class CharacterController : MonoBehaviour
         }
     }
 
+    public void AttachMask(MaskController mask)
+    {
+        Mask = mask;
+    }
+
     public AttackOutcome Attack(EnemyController enemy)
     {
         var events = new List<AttackEvents>();

@@ -34,6 +34,7 @@ public class DummyCombat : MonoBehaviour
         {
             Debug.Log("Combat Started!");
         });
+        
             CombatController.Instance.OnCombatEnd.AddListener(() =>
             {
                 Debug.Log($"Combat Ended! Victory: {PlayerController.Instance.PartyMembers.Any(c => c.IsAlive())}");
@@ -48,10 +49,12 @@ public class DummyCombat : MonoBehaviour
                     Debug.Log($"- {enemy.Data.Name} with {enemy.CurrentMotivation}/{enemy.GetCurrentMaxMotivation()} Motivation");
                 }
             });
+
             CombatController.Instance.OnCharacterAttack.AddListener((e) =>
             {
                 Debug.Log($"{e.Attacker.Data.Name} attacked {e.Target.Data.Name} for {e.Outcome.Damage} damage. Events: {string.Join(", ", e.Outcome.Events)}");
             });
+
             CombatController.Instance.OnEnemyAttack.AddListener((e) =>
             {
                 Debug.Log($"{e.Attacker.Data.Name} attacked {e.Target.Data.Name} for {e.Outcome.Damage} damage. Events: {string.Join(", ", e.Outcome.Events)}");

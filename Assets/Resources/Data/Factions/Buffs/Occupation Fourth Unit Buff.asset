@@ -23,7 +23,7 @@ MonoBehaviour:
   ExtraHitChancePercentage: 0
   StartOfCombatPacifierPercentage: 0
   EndOfCombatHealing: 0
-  EndOfCombatCandyGain: 0
+  EndOfCombatCandyGain: 5
   MotivationGainPerRound: 0
   ExtraDamageFromExtraCandy: 0
   MaximumExtraCandyUsable: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d707d593252092a45969d4f51abc6288, type: 3}
-  m_Name: Halloween Second Unit Buff
+  m_Name: Occupation Sixth Unit Buff
   m_EditorClassIdentifier: Assembly-CSharp::BuffData
   Name: 
   ParticleEffect: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
   ExtraHitChancePercentage: 0
   StartOfCombatPacifierPercentage: 0
   EndOfCombatHealing: 0
-  EndOfCombatCandyGain: 0
+  EndOfCombatCandyGain: 7
   MotivationGainPerRound: 0
   ExtraDamageFromExtraCandy: 0
   MaximumExtraCandyUsable: 0

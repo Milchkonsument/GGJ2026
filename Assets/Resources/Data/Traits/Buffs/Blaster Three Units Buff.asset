@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d707d593252092a45969d4f51abc6288, type: 3}
-  m_Name: Occupation Second Unit Buff
+  m_Name: Blaster Three Units Buff
   m_EditorClassIdentifier: Assembly-CSharp::BuffData
-  Name: 
+  Name: Blaster +3
   ParticleEffect: {fileID: 0}
   AttackPowerMultiplierPercentage: 0
   MotivationMultiplierPercentage: 0
@@ -20,7 +20,7 @@ MonoBehaviour:
   MotivationLossReductionPercentage: 0
   HexChanceOnHitPercentage: 0
   CurseDamagePerTurn: 0
-  ExtraHitChancePercentage: 0
+  ExtraHitChancePercentage: 15
   StartOfCombatPacifierPercentage: 0
   EndOfCombatHealing: 0
   EndOfCombatCandyGain: 0
@@ -31,7 +31,7 @@ MonoBehaviour:
   MaxStacks: 0
   ExtraDamagePerStack: 0
   BonusCandyPerDefeatedEnemy: 0
-  BonusDamagePerUnitInFaction: 0
+  BonusDamagePerUnitInFaction: 1
   LifestealPercentage: 0
   DodgeRateBonusPercentage: 0
   PlanningPhasePartyFinderPercentage: 0

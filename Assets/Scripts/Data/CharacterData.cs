@@ -5,6 +5,7 @@ public class CharacterData : ScriptableObject
 {
     public string Name;
     public string Description;
+    public int HireCost;
     public Sprite Sprite;
     public AudioClip DamageClip;
     public AudioClip DeathClip;
