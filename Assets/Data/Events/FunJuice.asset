@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6ce784c088ac429fa5c62464833a774, type: 3}
-  m_Name: 1Candy 4
+  m_Name: FunJuice
   m_EditorClassIdentifier: Assembly-CSharp::EventData
-  Name: 1Candy
+  Name: 
   Type: 0
-  Message: _ found a whopping 5 candy in the % &.
-  motivationChange: 1
-  candyChange: 1
+  Message: 
+  motivationChange: 0
+  candyChange: 0
   maskFound: 0
-  chanceWeight: 5
+  chanceWeight: 0
   eventSound: {fileID: 0}
