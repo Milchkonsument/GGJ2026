@@ -7,8 +7,8 @@ public class StatData : ScriptableObject
     public int BaseMotivation;
     [Range(1, 20)]
     public int BaseAttack;
-    [Range(0f, 1f)]
-    public float BaseCritRate;
-    [Range(0f, 1f)]
-    public float BaseDodgeRate;
+    [Range(0, 100)]
+    public int BaseCritRatePercentage;
+    [Range(0, 100)]
+    public int BaseDodgeRatePercentage;
 }
