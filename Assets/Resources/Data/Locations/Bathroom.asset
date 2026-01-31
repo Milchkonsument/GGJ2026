@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21be3c1be9ec84d20af156e5b764b56a, type: 3}
+  m_Name: Bathroom
+  m_EditorClassIdentifier: Assembly-CSharp::LocationData
+  Name: Bathroom
+  subLocations:
+  - {fileID: 11400000, guid: 0a4a4f36cd1dd478a80d869d83d251a1, type: 2}
+  - {fileID: 11400000, guid: 5ede5eb5356ff4311b20719c3614e990, type: 2}
+  - {fileID: 11400000, guid: 1d0269b617e2d45c6aa47c03b0c19901, type: 2}
+  - {fileID: 11400000, guid: ba2ef797d713048c5b6c229b80b4df4e, type: 2}
+  - {fileID: 11400000, guid: 0b30665552a6e456cbf460a6e1c18617, type: 2}
