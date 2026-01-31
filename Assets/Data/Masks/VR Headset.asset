@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e74db34711246094fb02cfecf643677f, type: 3}
+  m_Name: VR Headset
+  m_EditorClassIdentifier: Assembly-CSharp::MaskData
+  Name: VR Headset
+  Sprite: {fileID: 0}
+  Faction: {fileID: 11400000, guid: 483b711115d88ec48ac17f799fa95fa8, type: 2}
+  Traits:
+  - {fileID: 11400000, guid: 91428d2af44fb734081bef4c7ab014a0, type: 2}
+  UniqueBuff: {fileID: 0}
