@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74db34711246094fb02cfecf643677f, type: 3}
   m_Name: Firefighter
   m_EditorClassIdentifier: Assembly-CSharp::MaskData
+  Name: Firefighter
   Sprite: {fileID: 0}
-  Faction: {fileID: 0}
-  Traits: []
+  Faction: {fileID: 11400000, guid: 28422b3a68e1386469226b64caffcf1e, type: 2}
+  Traits:
+  - {fileID: 11400000, guid: eb25ddc4cc2eac942b55c2131b99fdae, type: 2}
   UniqueBuff: {fileID: 0}
