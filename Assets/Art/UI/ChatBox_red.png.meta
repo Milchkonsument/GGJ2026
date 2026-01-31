@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: db02bdc0d0bcd624c8ce848dfa55274e
+guid: abb8ce4ff3486b54cb0977805708db37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4048702873816929935
-    second: Speechbubble_red_0
+      213: -2432637311739764205
+    second: ChatBox_red_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Speechbubble_red_0
+      name: ChatBox_red_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 80
-        height: 41
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 179e90def2e10d7c0800000000000000
-      internalID: -4048702873816929935
+      spriteID: 312e36ee0498d3ed0800000000000000
+      internalID: -2432637311739764205
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Speechbubble_red_0: -4048702873816929935
+      ChatBox_red_0: -2432637311739764205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
