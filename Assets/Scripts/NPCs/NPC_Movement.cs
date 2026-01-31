@@ -12,8 +12,16 @@ public class NPC_Movement : MonoBehaviour
     [SerializeField] private float maxSpeed = 2f;
     [SerializeField] private float speedChangeRate = 1f;
     
-    private float walkSpeed = 2f;
+    private float walkSpeed;
     private bool increasing = false;
+    private Animator animator;
+    private bool isWalking;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        walkSpeed = Random.Range(minSpeed, maxSpeed);
+    }
 
     private void FixedUpdate()
     {
@@ -23,7 +31,6 @@ public class NPC_Movement : MonoBehaviour
 
     private void UpdateWalkSpeed()
     {
-        walkSpeed = Random.Range(minSpeed, maxSpeed);
         if (increasing)
         {
             walkSpeed += speedChangeRate * Time.fixedDeltaTime;
@@ -47,5 +54,19 @@ public class NPC_Movement : MonoBehaviour
     private void NPCWalk()
     {
         transform.position = new Vector3(transform.position.x + walkSpeed * Time.fixedDeltaTime, transform.position.y, transform.position.z);
+        if(!isWalking)
+        {
+            animator.CrossFade("Walk", 0.5f);
+            isWalking = true;
+        }
+    }
+
+    private void StopWalking()
+    {
+        if(isWalking)
+        {
+            animator.CrossFade("Idle", 0.5f);
+            isWalking = false;
+        }
     }
 }
