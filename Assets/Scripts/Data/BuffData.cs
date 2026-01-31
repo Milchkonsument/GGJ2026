@@ -10,15 +10,16 @@ public class BuffData : ScriptableObject
     public ParticleSystem ParticleEffect;
 
     [Header("Basic Stat Multipliers")]
-    public float AttackPowerMultiplier;
-    public float MotivationMultiplier;
-    public float MotivationLossReduction;
-    public float CritRateBonus;
+    public int AttackPowerMultiplierPercentage;
+    public int MotivationMultiplierPercentage;
+    public int CritRateBonusPercentage;
+
     [Header("Combat Effects")]
-    public float HexChanceOnHit;
+    public int MotivationLossReductionPercentage;
+    public int HexChanceOnHitPercentage;
     public int CurseDamagePerTurn;
-    public float ExtraHitChance;
-    public float StartOfCombatPacifierChance;
+    public int ExtraHitChancePercentage;
+    public int StartOfCombatPacifierPercentage;
     public int EndOfCombatHealing;
     public int EndOfCombatCandyGain;
     public int MotivationGainPerRound;
@@ -29,5 +30,8 @@ public class BuffData : ScriptableObject
     public int ExtraDamagePerStack;
     public int BonusCandyPerDefeatedEnemy;
     public int BonusDamagePerUnitInFaction;
-    public float LifestealPercentage;
+    public int LifestealPercentage;
+    public int DodgeRateBonusPercentage;
+    public int PlanningPhasePartyFinderPercentage;
+    public int BloodCandyGenerationOnKillingBlow;
 }
