@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b2c7902e8d324a4ea33c6f02fa4f28b, type: 3}
+  m_Name: Rarity_Common
+  m_EditorClassIdentifier: Assembly-CSharp::CandyRarity
+  RarityName: Common
+  RarityColor: {r: 0.585222, g: 0.69182384, b: 0.6635435, a: 1}
+  ParticleEffect: {fileID: 0}

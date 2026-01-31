@@ -5,6 +5,6 @@ public class TraitData : ScriptableObject
 {
     public string Name;
     public Sprite Sprite;
-    public Buff BuffTwoUnits;
-    public Buff BuffThreeUnits;
+    public BuffData BuffTwoUnits;
+    public BuffData BuffThreeUnits;
 }
