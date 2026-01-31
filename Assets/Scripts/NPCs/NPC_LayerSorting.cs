@@ -16,12 +16,11 @@ public class NPC_LayerSorting : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
     private List<SpriteRenderer> spriteRenderers = new List<SpriteRenderer>();
 
     private void Start()
     {
-        CollectKids();
         SortKids();
     }
 
@@ -40,6 +39,8 @@ public class NPC_LayerSorting : MonoBehaviour
 
     public void SortKids()
     {
+        spriteRenderers.Clear();
+        CollectKids();
         spriteRenderers.Sort((a, b) => b.transform.position.y.CompareTo(a.transform.position.y));
         for (int i = 0; i < spriteRenderers.Count; i++)
         {
