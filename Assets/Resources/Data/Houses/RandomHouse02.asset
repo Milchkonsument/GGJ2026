@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f582be7d35882743b0bcdf5474ae6ae, type: 3}
   m_Name: RandomHouse02
   m_EditorClassIdentifier: Assembly-CSharp::HouseData
-  HouseName: Manor Mansion
+  HouseName: Space House
   Enemies:
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  HouseDifficulty: 1
+  - {fileID: 7516276064155237402, guid: da2af6a413bc2844aacf8a2f54a5fd9c, type: 3}
+  - {fileID: 7516276064155237402, guid: da2af6a413bc2844aacf8a2f54a5fd9c, type: 3}

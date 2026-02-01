@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StageData
   StageName: Trusty Neighborhood
   BackgroundImage: {fileID: 0}
-  Houses: []
-  StageBoss: {fileID: 0}
+  Houses:
+  - {fileID: 11400000, guid: e08fc74ee415aff4d87b4144a6ceec5c, type: 2}
+  - {fileID: 11400000, guid: 8118cf70ecab8984fb6159a641a405d7, type: 2}
+  - {fileID: 11400000, guid: e8c16c4643c53b843bcc8a3606aac251, type: 2}
+  - {fileID: 11400000, guid: afb8fdcc601a39b40942f06a1bbdac46, type: 2}
+  StageBoss: {fileID: 11400000, guid: 5b9be0b78e0963e40b8fa9c8a4c1a025, type: 2}

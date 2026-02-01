@@ -108,6 +108,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4552021665882043643, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
+      propertyPath: m_TagString
+      value: HousePosition
+      objectReference: {fileID: 0}
     - target: {fileID: 4737682065147163899, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

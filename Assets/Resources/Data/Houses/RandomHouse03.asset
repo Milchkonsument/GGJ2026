@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f582be7d35882743b0bcdf5474ae6ae, type: 3}
   m_Name: RandomHouse03
   m_EditorClassIdentifier: Assembly-CSharp::HouseData
-  HouseName: House of Cats
+  HouseName: House of Adults
   Enemies:
-  - {fileID: 11400000, guid: 6e70ccc54a36dfe4f8878d5bccce0347, type: 2}
-  - {fileID: 11400000, guid: 6e70ccc54a36dfe4f8878d5bccce0347, type: 2}
-  - {fileID: 11400000, guid: 6e70ccc54a36dfe4f8878d5bccce0347, type: 2}
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  HouseDifficulty: 2
+  - {fileID: 7070468914760109513, guid: 7431b458c3238e44fa77484436974f03, type: 3}
+  - {fileID: 7070468914760109513, guid: 7431b458c3238e44fa77484436974f03, type: 3}

@@ -111,8 +111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC_Movement
   housePosition: {fileID: 0}
   entrancePosition: {fileID: 0}
-  minSpeed: 0.6
-  maxSpeed: 2
+  minSpeed: 0.8
+  maxSpeed: 1.2
   speedChangeRate: 1
 --- !u!95 &3522092562895171330
 Animator:

@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f582be7d35882743b0bcdf5474ae6ae, type: 3}
   m_Name: RandomHouse01
   m_EditorClassIdentifier: Assembly-CSharp::HouseData
-  HouseName: House of Pain
+  HouseName: Unusually cold House
   Enemies:
-  - {fileID: 11400000, guid: 6e70ccc54a36dfe4f8878d5bccce0347, type: 2}
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  HouseDifficulty: 1
+  - {fileID: 1677628974758160059, guid: f73fbfaeaf9799446b39ead050920b10, type: 3}
