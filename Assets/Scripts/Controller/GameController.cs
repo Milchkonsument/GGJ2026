@@ -59,13 +59,13 @@ public class GameController : Singleton<GameController>
     
     private void OnCombatEnd(FightResult result)
     {
-            if (!result.isWin)
+            if (!result.IsWin)
             {
                 OnGameOver.Invoke();
                 return;
             }
 
-            OnRaidEnded.Invoke(result.lootedCandies);
+            OnRaidEnded.Invoke(result.LootedCandies);
     }
 
     public StageData GetCurrentStage()

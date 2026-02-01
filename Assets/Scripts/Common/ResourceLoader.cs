@@ -1,9 +1,9 @@
 using System.Linq;
 using UnityEngine;
 
-static class ResourceLoader
+public static class ResourceLoader
 {
-    static class Characters
+    public static class Characters
     {
         public static readonly string DATA_PATH = "Data/Characters/";
 
@@ -22,7 +22,7 @@ static class ResourceLoader
         }
     }
 
-    static class Candies
+    public static class Candies
     {
         public static readonly string DATA_PATH = "Data/Candies/";
 
@@ -60,7 +60,7 @@ static class ResourceLoader
         }
     }
 
-    static class Enemies
+    public static class Enemies
     {
         public static readonly string DATA_PATH = "Data/Enemies/";
 

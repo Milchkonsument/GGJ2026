@@ -1,6 +1,6 @@
 using UnityEngine;
 
-class CandyController : MonoBehaviour
+public class CandyController : MonoBehaviour
 {
     public CandyData Data;
 }

@@ -8,6 +8,55 @@ class PlayerController : Singleton<PlayerController>
     public List<MaskController> UnassignedMasks = new();
     public List<CandyController> Candies = new();
 
+    public void AddPartyMember(CharacterController character)
+    {
+        if (!PartyMembers.Contains(character))
+        {
+            PartyMembers.Add(character);
+        }
+    }
+
+    public void AddMask(MaskController mask)
+    {
+        if (!UnassignedMasks.Contains(mask))
+        {
+            UnassignedMasks.Add(mask);
+        }
+    }
+
+    public void FeedPartMemberCandy(CharacterController character, CandyController candy)
+    {
+        if (PartyMembers.Contains(character) && Candies.Contains(candy))
+        {
+            character.CurrentMotivation += candy.Data.MotivationGain;
+            if (character.CurrentMotivation > character.GetCurrentMaxMotivation())
+            {
+                character.CurrentMotivation = character.GetCurrentMaxMotivation();
+            }
+            Candies.Remove(candy);
+            Destroy(candy.gameObject);
+        }
+    }
+
+    public void AttachMaskToCharacter(MaskController mask, CharacterController character)
+    {
+        if (UnassignedMasks.Contains(mask) && PartyMembers.Contains(character))
+        {
+            character.Mask = mask;
+            UnassignedMasks.Remove(mask);
+        }
+    }
+
+    public void RemoveMaskFromCharacter(CharacterController character)
+    {
+        if (PartyMembers.Contains(character))
+        {
+            UnassignedMasks.Add(character.Mask);
+            character.Mask = null;
+        }
+    }
+
+
     public List<MaskController> GetActiveMasks() => PartyMembers.Select(m => m.Mask).NotNull().ToList();
 
     public List<(FactionData, int)> GetActiveFactionsAndCount()

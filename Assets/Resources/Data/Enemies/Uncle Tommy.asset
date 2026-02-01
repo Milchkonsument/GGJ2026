@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Uncle Tommy
   Sprite: {fileID: 0}
   BaseStats: {fileID: 11400000, guid: 4ced7541173115b40b631283bc983e8d, type: 2}
-  DropTable: []
+  Drops: []
   DamageClip: {fileID: 0}
   DeathClip: {fileID: 0}
   AttackClip: {fileID: 0}

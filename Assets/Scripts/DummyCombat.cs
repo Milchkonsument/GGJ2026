@@ -37,7 +37,7 @@ public class DummyCombat : MonoBehaviour
 
             CombatController.Instance.OnCombatEnd.AddListener((result) =>
             {
-                Debug.Log($"Combat Ended! Victory: {result.isWin}");
+                Debug.Log($"Combat Ended! Victory: {result.IsWin}");
                 Debug.Log("Surviving Party Members:");
                 foreach (var member in PlayerController.Instance.PartyMembers.Where(c => c.IsAlive()))
                 {
@@ -50,7 +50,7 @@ public class DummyCombat : MonoBehaviour
                 }
 
                 Debug.Log("Looted Candies:");
-                foreach (var candy in result.lootedCandies)
+                foreach (var candy in result.LootedCandies)
                 {
                     Debug.Log($"- {candy.name} (Rarity: {candy.Rarity.name})");
                 }

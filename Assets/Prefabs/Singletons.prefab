@@ -33,6 +33,7 @@ Transform:
   - {fileID: 8048796250274180527}
   - {fileID: 1744603916174567491}
   - {fileID: 9057072469987561919}
+  - {fileID: 6287940466329127806}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4500626872671717887
@@ -128,6 +129,51 @@ MonoBehaviour:
   greenBubblePrefab: {fileID: 8183069682580583322, guid: 2b24925abb6186042975e2a6bd44e6ee, type: 3}
   eventChatScrollView: {fileID: 0}
   contentContainer: {fileID: 0}
+--- !u!1 &7877577568254041676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6287940466329127806}
+  - component: {fileID: 8307979975448920990}
+  m_Layer: 0
+  m_Name: NPCmanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6287940466329127806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877577568254041676}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5622706420598388518}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8307979975448920990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877577568254041676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a52e8c027ef0c41a2a3e9f5138506b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.NPCs.NPC_Manager
+  selectedNPC: {fileID: 0}
 --- !u!1 &9084340612555552022
 GameObject:
   m_ObjectHideFlags: 0
