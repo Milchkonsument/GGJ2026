@@ -17,6 +17,7 @@ public class NPC_LayerSorting : MonoBehaviour
         }
     }
 
+    [SerializeField] private int baseSortingOrder = 5;
     private List<SpriteRenderer> spriteRenderers = new List<SpriteRenderer>();
 
     private void Start()
@@ -44,7 +45,7 @@ public class NPC_LayerSorting : MonoBehaviour
         spriteRenderers.Sort((a, b) => b.transform.position.y.CompareTo(a.transform.position.y));
         for (int i = 0; i < spriteRenderers.Count; i++)
         {
-            spriteRenderers[i].sortingOrder = i;
+            spriteRenderers[i].sortingOrder = i + baseSortingOrder;
         }
     }
 }
