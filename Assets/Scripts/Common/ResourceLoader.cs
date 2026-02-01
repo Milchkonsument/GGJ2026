@@ -96,4 +96,15 @@ public static class ResourceLoader
             return maskController;
         }
     }
+
+    public static class UI
+    {
+        public static readonly string PREFAB_PATH = "UI/";
+
+        public static CombatPanel CreateCombatPanel()
+        {
+            var prefab = Resources.Load<CombatPanel>(PREFAB_PATH + "CombatPanel");
+            return GameObject.Instantiate(prefab);
+        }
+    }
 }
