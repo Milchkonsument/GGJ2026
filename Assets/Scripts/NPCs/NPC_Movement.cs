@@ -8,7 +8,7 @@ public class NPC_Movement : MonoBehaviour
     [SerializeField] private Transform entrancePosition;
 
     [Header("Movement Settings")]
-    [SerializeField]private float minSpeed = 0.3f;
+    [SerializeField] private float minSpeed = 0.3f;
     [SerializeField] private float maxSpeed = 2f;
     [SerializeField] private float speedChangeRate = 1f;
     

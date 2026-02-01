@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class NPC_Selectable : MonoBehaviour
 {
     public MaskData equippedMask;
+    public SpriteRenderer maskOverlay;
 
     public void OnMouseDown()
     {
@@ -23,6 +24,7 @@ public class NPC_Selectable : MonoBehaviour
     public void EquipMask(MaskData mask)
     {
         equippedMask = mask;
+        maskOverlay.sprite = mask.Sprite;
     }
 
     public void UnequipMask()

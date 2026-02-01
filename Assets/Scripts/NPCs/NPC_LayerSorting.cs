@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class NPC_LayerSorting : MonoBehaviour
@@ -46,6 +47,17 @@ public class NPC_LayerSorting : MonoBehaviour
         for (int i = 0; i < spriteRenderers.Count; i++)
         {
             spriteRenderers[i].sortingOrder = i + baseSortingOrder;
+            var NPCSlectable = spriteRenderers[i].gameObject.GetComponent<NPC_Selectable>();
+
+            if (NPCSlectable == null)
+                continue;
+
+            var maskOverlay = NPCSlectable.maskOverlay;
+
+            if (maskOverlay == null)
+                continue;
+
+            maskOverlay.sortingOrder = i + baseSortingOrder + 1;
         }
     }
 }
