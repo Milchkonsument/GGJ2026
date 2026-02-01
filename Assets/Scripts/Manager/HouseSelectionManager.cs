@@ -25,6 +25,8 @@ public class HouseSelectionManager : MonoBehaviour
 
     private void GenerateHouseDetails()
     {
+        HouseController houseController = ResourceLoader.Houses.CreateRandomHouse();
+        
         var panel = Instantiate(selectionPanelPrefab, selectionPanelContainer);
         Image[] panelImage = panel.GetComponentsInChildren<Image>();
         Image housePanelImage = panelImage[1];
