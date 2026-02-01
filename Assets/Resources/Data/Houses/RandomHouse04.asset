@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f582be7d35882743b0bcdf5474ae6ae, type: 3}
   m_Name: RandomHouse04
   m_EditorClassIdentifier: Assembly-CSharp::HouseData
-  HouseName: White House
+  HouseName: House of Cheese
   Enemies:
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  HouseDifficulty: 2
+  - {fileID: 2693970143987803141, guid: 7732b5689ff2b6e43804eded23522a79, type: 3}

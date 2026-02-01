@@ -75,7 +75,6 @@ static class ResourceLoader
             var enemyController = enemyGameObject.AddComponent<EnemyController>();
             enemyController.Data = enemyData;
             enemyController.CurrentMotivation = enemyController.Data.BaseStats.BaseMotivation;
-            enemyController.SpriteRenderer.sprite = enemySprite;
             return enemyController;
         }
     }

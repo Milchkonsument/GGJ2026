@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f582be7d35882743b0bcdf5474ae6ae, type: 3}
   m_Name: RandomHouse05
   m_EditorClassIdentifier: Assembly-CSharp::HouseData
-  HouseName: Tommy's House
+  HouseName: Evil House of Evil
   Enemies:
-  - {fileID: 11400000, guid: 244cfa0609bb09443a9e03d618297399, type: 2}
-  HouseDifficulty: 0
+  - {fileID: 4951809998852616795, guid: 485250f48cf9a494bbfcced717dfc4dd, type: 3}
