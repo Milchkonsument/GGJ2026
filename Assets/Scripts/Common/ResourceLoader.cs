@@ -69,12 +69,12 @@ public static class ResourceLoader
             var enemyDataFiles = Resources.LoadAll<EnemyData>(DATA_PATH);
             var randomIndex = Random.Range(0, enemyDataFiles.Length);
             var enemyData = enemyDataFiles[randomIndex];
-            var enemySprite = enemyData.Sprite;
 
             var enemyGameObject = new GameObject(enemyData.Name);
             var enemyController = enemyGameObject.AddComponent<EnemyController>();
             enemyController.Data = enemyData;
             enemyController.CurrentMotivation = enemyController.Data.BaseStats.BaseMotivation;
+
             return enemyController;
         }
     }
@@ -97,21 +97,14 @@ public static class ResourceLoader
         }
     }
 
-    public static class Houses
+    public static class UI
     {
-        public static readonly string DATA_PATH = "Data/Houses/";
+        public static readonly string PREFAB_PATH = "UI/";
 
-        public static HouseController CreateRandomHouse()
+        public static CombatPanel CreateCombatPanel()
         {
-            var houseDataFiles = Resources.LoadAll<HouseData>(DATA_PATH);
-            var randomIndex = Random.Range(0, houseDataFiles.Length);
-            var houseData = houseDataFiles[randomIndex];
-
-            var houseGameObject = new GameObject(houseData.HouseName);
-            var houseController = houseGameObject.AddComponent<HouseController>();
-            houseController.Data = houseData;
-
-            return houseController;
+            var prefab = Resources.Load<CombatPanel>(PREFAB_PATH + "CombatPanel");
+            return GameObject.Instantiate(prefab);
         }
     }
 }

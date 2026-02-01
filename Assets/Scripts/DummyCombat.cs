@@ -6,6 +6,7 @@ public class DummyCombat : MonoBehaviour
 {
     public List<CharacterData> DummyCharacters;
     public List<EnemyData> DummyEnemies;
+    public CombatOverlayUI CombatOverlayUIInstance;
 
     private List<CharacterController> CharacterControllers = new();
     private List<EnemyController> EnemyControllers = new();
@@ -29,6 +30,8 @@ public class DummyCombat : MonoBehaviour
             controller.CurrentMotivation = controller.GetCurrentMaxMotivation();
             return controller;
         });
+
+        CombatOverlayUIInstance.gameObject.SetActive(true); 
 
         CombatController.Instance.OnCombatStart.AddListener(() =>
         {
