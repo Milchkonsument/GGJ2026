@@ -57,8 +57,11 @@ public class EventChatManager : MonoBehaviour
 
     IEnumerator ScrollToBottomNextFrame()
     {
-        yield return null; // Wait for the end of the frame
-        eventChatScrollView.verticalNormalizedPosition = 0f;
+        yield return null;
+        if(eventChatScrollView != null)
+        {
+            eventChatScrollView.verticalNormalizedPosition = 0f;            
+        }
     }
 
     private void ScrollToBottom()

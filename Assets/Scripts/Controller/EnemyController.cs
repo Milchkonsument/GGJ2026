@@ -5,6 +5,7 @@ public class EnemyController : MonoBehaviour
 {
     public EnemyData Data;
     public int CurrentMotivation = 0;
+    public SpriteRenderer SpriteRenderer;
 
     public bool IsAlive() => CurrentMotivation > 0;
     public bool IsDead() => !IsAlive();

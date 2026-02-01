@@ -69,12 +69,13 @@ public static class ResourceLoader
             var enemyDataFiles = Resources.LoadAll<EnemyData>(DATA_PATH);
             var randomIndex = Random.Range(0, enemyDataFiles.Length);
             var enemyData = enemyDataFiles[randomIndex];
+            var enemySprite = enemyData.Sprite;
 
             var enemyGameObject = new GameObject(enemyData.Name);
             var enemyController = enemyGameObject.AddComponent<EnemyController>();
             enemyController.Data = enemyData;
             enemyController.CurrentMotivation = enemyController.Data.BaseStats.BaseMotivation;
-
+            enemyController.SpriteRenderer.sprite = enemySprite;
             return enemyController;
         }
     }
@@ -94,6 +95,24 @@ public static class ResourceLoader
             maskController.Data = maskData;
 
             return maskController;
+        }
+    }
+
+    public static class Houses
+    {
+        public static readonly string DATA_PATH = "Data/Houses/";
+
+        public static HouseController CreateRandomHouse()
+        {
+            var houseDataFiles = Resources.LoadAll<HouseData>(DATA_PATH);
+            var randomIndex = Random.Range(0, houseDataFiles.Length);
+            var houseData = houseDataFiles[randomIndex];
+
+            var houseGameObject = new GameObject(houseData.HouseName);
+            var houseController = houseGameObject.AddComponent<HouseController>();
+            houseController.Data = houseData;
+
+            return houseController;
         }
     }
 }
