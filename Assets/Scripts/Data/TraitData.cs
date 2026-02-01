@@ -7,4 +7,13 @@ public class TraitData : ScriptableObject
     public Sprite Sprite;
     public BuffData BuffTwoUnits;
     public BuffData BuffThreeUnits;
+
+    public BuffData GetBuffDataForUnitCount(int unitCount)
+    {
+        if (unitCount >= 3)
+            return BuffThreeUnits;
+        if (unitCount == 2)
+            return BuffTwoUnits;
+        return null;
+    }
 }
