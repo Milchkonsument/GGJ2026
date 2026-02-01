@@ -245,6 +245,11 @@ public class CharacterController : MonoBehaviour
     {
         return PlayerController.Instance.GetPossibleBuffFromTraitsFor(this);
     }
+
+    public void ConsumeCandy(CandyData candy)
+    {
+        // TODO
+    }
 }
 
 public class AttackOutcome
@@ -264,3 +269,5 @@ public enum AttackEvents
     Critical,
     Lifesteal,
 }
+
+

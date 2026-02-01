@@ -18,11 +18,6 @@ public class NPC_Selectable : MonoBehaviour
         NPC_Manager.Instance.SetSelectedNPC(this);
     }
 
-    public void ConsumeCandy(CandyData candy)
-    {
-
-    }
-
     public void EquipMask(MaskController mask)
     {
         PlayerController.Instance.AttachMaskToCharacter(mask, characterController);

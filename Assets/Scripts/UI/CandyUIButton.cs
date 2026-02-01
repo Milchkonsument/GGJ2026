@@ -28,7 +28,7 @@ namespace Assets.Scripts.UI
 
             // TODO count candy
 
-            selectedNPC.ConsumeCandy(AssociatedCandy);
+            selectedNPC.characterController.ConsumeCandy(AssociatedCandy);
             // TOOD decrease coutn
         }
 
