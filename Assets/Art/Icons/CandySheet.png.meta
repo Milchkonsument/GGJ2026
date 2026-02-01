@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -117,6 +117,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -124,19 +137,19 @@ TextureImporter:
       name: CandySheet_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 14
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f3f496d6cd3d9baa0800000000000000
+      spriteID: 3c28bc5bb05030b498b9608dc3e21e5e
       internalID: -6144647272888447169
       vertices: []
       indices: 
@@ -147,18 +160,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 8
-        width: 7
-        height: 8
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1d3968a8d4b4b3870800000000000000
+      spriteID: 5857dafd82ae3ef40a0392d9734c1857
       internalID: 8663601104585921489
       vertices: []
       indices: 
@@ -168,19 +181,19 @@ TextureImporter:
       name: CandySheet_2
       rect:
         serializedVersion: 2
-        x: 21
+        x: 32
         y: 0
-        width: 7
-        height: 8
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3f5fa3f377565ab50800000000000000
+      spriteID: 43d3ee8c652493c419782b8d4f306d75
       internalID: 6603795991445042675
       vertices: []
       indices: 
@@ -190,19 +203,19 @@ TextureImporter:
       name: CandySheet_3
       rect:
         serializedVersion: 2
-        x: 24
-        y: 8
-        width: 8
-        height: 7
+        x: 48
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f6d3af4e084bae990800000000000000
+      spriteID: 946fcefffb2b71b41940cb482bce7982
       internalID: -7355868575665865361
       vertices: []
       indices: 
@@ -212,19 +225,19 @@ TextureImporter:
       name: CandySheet_4
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e7f0c017870b25c0800000000000000
+      spriteID: 2afb42b10eb7d194ca9cff8fa04e45a2
       internalID: -4239286347556128791
       vertices: []
       indices: 
@@ -234,64 +247,20 @@ TextureImporter:
       name: CandySheet_5
       rect:
         serializedVersion: 2
-        x: 48
+        x: 80
         y: 0
-        width: 15
+        width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c9c3ed3bb091e080800000000000000
+      spriteID: 2fb844fb0d5fc84428d0d9e5e33129d4
       internalID: -9159881033223255607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CandySheet_6
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 14e0454dd46f10e70800000000000000
-      internalID: 9079809137890823745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CandySheet_7
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 0
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85916389ce957c710800000000000000
-      internalID: 1713437055938599256
       vertices: []
       indices: 
       edges: []
@@ -300,7 +269,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c8c6767e86b2ab64689c27359b02a1ee
     internalID: 0
     vertices: []
     indices: 
@@ -308,7 +277,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: True
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":true,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       CandySheet_0: -6144647272888447169
       CandySheet_1: 8663601104585921489
@@ -316,8 +289,6 @@ TextureImporter:
       CandySheet_3: -7355868575665865361
       CandySheet_4: -4239286347556128791
       CandySheet_5: -9159881033223255607
-      CandySheet_6: 9079809137890823745
-      CandySheet_7: 1713437055938599256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
