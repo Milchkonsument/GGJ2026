@@ -4,12 +4,5 @@ using UnityEngine;
 public class HouseData : ScriptableObject
 {
     public string HouseName;
-    public EnemyData[] Enemies;
-    public Difficulty HouseDifficulty;
-    public enum Difficulty
-    {
-        Easy,
-        Medium,
-        Hard
-    }
+    public EnemyController[] Enemies;
 }

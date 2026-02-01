@@ -6,7 +6,7 @@ public class EnemyData : ScriptableObject
     public string Name;
     public Sprite Sprite;
     public StatData BaseStats;
-    public DropData[] DropTable;
+    public CandyData[] Drops;
     public AudioClip DamageClip;
     public AudioClip DeathClip;
     public AudioClip AttackClip;

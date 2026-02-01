@@ -9,11 +9,12 @@ using UnityEngine.Events;
 public class CombatController : Singleton<CombatController>
 {
     [SerializeField, Range(.0f, 1.0f)] private float CombatTickRate = .5f;
+    [SerializeField, Range (20, 100)] private int MaxTicksPerCombat = 50;
 
     public readonly UnityEvent<CharacterAttackEvent> OnCharacterAttack = new();
     public readonly UnityEvent<EnemyAttackEvent> OnEnemyAttack = new();
     public readonly UnityEvent OnCombatStart = new();
-    public readonly UnityEvent OnCombatEnd = new();
+    public readonly UnityEvent<FightResult> OnCombatEnd = new();
 
     public void FightAgainst(List<EnemyController> enemies)
     {
@@ -26,20 +27,27 @@ public class CombatController : Singleton<CombatController>
 
         var tickInterval = new WaitForSeconds(CombatTickRate);
         var playerParty = PlayerController.Instance.PartyMembers;
+        var lootedCandies = new List<CandyData>();
         
         while(playerParty.Any(m => m.IsAlive() ) && enemies.Any(e => e.IsAlive()))
         {
             yield return tickInterval;
-            PerformCombatTick(enemies);
+            lootedCandies.AddRange(PerformCombatTick(enemies));
         }
 
         PlayerController.Instance.PartyMembers.ForEach(m => m.ResetCombatStacks());
 
-        OnCombatEnd.Invoke();
+        OnCombatEnd.Invoke(new FightResult()
+        {
+            isWin = playerParty.Any(m => m.IsAlive()),
+            lootedCandies = lootedCandies,
+        });
 }
 
-    void PerformCombatTick(List<EnemyController> enemies)
+    List<CandyData> PerformCombatTick(List<EnemyController> enemies)
     {
+        List<CandyData> lootedCandies = new();
+
         foreach (var member in PlayerController.Instance.PartyMembers.Where(m => m.IsAlive()))
         {
             var target = enemies.Where(e => e.IsAlive()).GetRandomElement();
@@ -50,6 +58,12 @@ public class CombatController : Singleton<CombatController>
                 Target = target,
                 Outcome = outcome
             });
+
+            if (!target.IsAlive())
+            {
+                var drops = target.Data.Drops;
+                lootedCandies.AddRange(drops);
+            }
         }
 
         foreach (var enemy in enemies.Where(e => e.IsAlive()))
@@ -63,6 +77,8 @@ public class CombatController : Singleton<CombatController>
                 Outcome = outcome
             });
         }
+
+        return lootedCandies;
     }
 }
 
@@ -78,4 +94,10 @@ public class EnemyAttackEvent
     public EnemyController Attacker;
     public CharacterController Target;
     public AttackOutcome Outcome;
+}
+
+public class FightResult
+{
+    public List<CandyData> lootedCandies = new();
+    public bool isWin;
 }
