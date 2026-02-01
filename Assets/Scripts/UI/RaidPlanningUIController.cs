@@ -51,7 +51,7 @@ public class RaidPlanningUIController : MonoBehaviour
             MaskEntryController newMaskEntry = newMaskObject.GetComponent<MaskEntryController>();
 
             currentMaskEntries.Add(newMaskEntry);
-            newMaskEntry.init(mask.Data);
+            newMaskEntry.init(mask);
             newMaskEntry.onMaskSelected += OnMaskSelected;
 
             if (NPC.characterController.Mask == mask.Data)

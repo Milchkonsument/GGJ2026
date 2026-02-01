@@ -7,17 +7,17 @@ public class MaskEntryController : MonoBehaviour, IPointerClickHandler
 {
     public Image image;
     public Image background;
-    public MaskData maskData;
+    public MaskController maskController;
 
     public bool bIsSelected = false;
 
     public delegate void OnMaskSelected(MaskEntryController maskEntry);
     public OnMaskSelected onMaskSelected;
 
-    public void init(MaskData mask)
+    public void init(MaskController mask)
     {
-        this.maskData = mask;
-        image.sprite = mask.Sprite;
+        this.maskController = mask;
+        image.sprite = mask.Data.Sprite;
 
     }
 
@@ -66,7 +66,7 @@ public class MaskEntryController : MonoBehaviour, IPointerClickHandler
             return;
 
 
-        NPC.EquipMask(NPC.characterController.Mask);
+        NPC.EquipMask(maskController);
 
         onMaskSelected(this);
     }
