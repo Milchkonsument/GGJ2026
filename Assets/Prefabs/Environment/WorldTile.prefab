@@ -104,6 +104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HousePrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 4360355695538993255, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4737682065147163899, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -151,6 +155,18 @@ PrefabInstance:
     - target: {fileID: 4737682065147163899, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503888770323812126, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8169275265953869663, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8770450040652562066, guid: e9bb74e79d582d747a1549ecf5190a14, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
