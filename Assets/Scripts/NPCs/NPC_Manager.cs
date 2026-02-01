@@ -5,27 +5,13 @@ using UnityEngine;
 
 namespace Assets.Scripts.NPCs
 {
-    public class NPC_Manager : MonoBehaviour
+    public class NPC_Manager : Singleton<NPC_Manager>
     {
 
         public NPC_Selectable selectedNPC;
         public delegate void OnNPCSelected(NPC_Selectable selectedNPC);
         public OnNPCSelected onNPCSelected;
 
-
-        public static NPC_Manager Instance { get; private set; }
-
-        private void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
 
         public void SetSelectedNPC(NPC_Selectable newNPC)
         {
