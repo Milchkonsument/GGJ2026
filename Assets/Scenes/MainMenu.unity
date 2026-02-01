@@ -395,6 +395,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8344811641781037024, guid: c14b2b3ad0a41a546a72484b92e512a3, type: 3}
+      propertyPath: maxSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344811641781037024, guid: c14b2b3ad0a41a546a72484b92e512a3, type: 3}
+      propertyPath: minSpeed
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1109,6 +1117,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2769866549735140005, guid: 76106b7b145157245a2a59a9c71c9b95, type: 3}
+      propertyPath: maxSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2769866549735140005, guid: 76106b7b145157245a2a59a9c71c9b95, type: 3}
+      propertyPath: minSpeed
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6788636249913068145, guid: 76106b7b145157245a2a59a9c71c9b95, type: 3}
       propertyPath: m_Name
       value: FatKid
@@ -1492,6 +1508,14 @@ PrefabInstance:
     - target: {fileID: 7625279835261889299, guid: c14b2b3ad0a41a546a72484b92e512a3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344811641781037024, guid: c14b2b3ad0a41a546a72484b92e512a3, type: 3}
+      propertyPath: maxSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8344811641781037024, guid: c14b2b3ad0a41a546a72484b92e512a3, type: 3}
+      propertyPath: minSpeed
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2931,7 +2955,7 @@ GameObject:
   - component: {fileID: 1136674410}
   - component: {fileID: 1136674409}
   m_Layer: 0
-  m_Name: AudioTest
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2948,11 +2972,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -980709585522135150, guid: d99932c2fddffc34db85310ba759ae0e, type: 2}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 48a8219b13618dd4f9be4c39f74f295d, type: 3}
+  m_Resource: {fileID: 8300000, guid: 48c653f8f913f7b428a572267a6db999, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3199,6 +3223,14 @@ PrefabInstance:
     - target: {fileID: 1905981562852757190, guid: 76106b7b145157245a2a59a9c71c9b95, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2769866549735140005, guid: 76106b7b145157245a2a59a9c71c9b95, type: 3}
+      propertyPath: maxSpeed
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2769866549735140005, guid: 76106b7b145157245a2a59a9c71c9b95, type: 3}
+      propertyPath: minSpeed
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6788636249913068145, guid: 76106b7b145157245a2a59a9c71c9b95, type: 3}
       propertyPath: m_Name
@@ -3725,7 +3757,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 752838311}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: AdjustVolume
+        m_MethodName: AdjustMusicVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3828,7 +3860,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 752838311}
         m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: AdjustVolume
+        m_MethodName: AdjustSFXVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
