@@ -8,8 +8,8 @@ public class NPC_Movement : MonoBehaviour
     [SerializeField] private Transform entrancePosition;
 
     [Header("Movement Settings")]
-    [SerializeField]private float minSpeed = 0.3f;
-    [SerializeField] private float maxSpeed = 2f;
+    [SerializeField]private float minSpeed = 0.8f;
+    [SerializeField] private float maxSpeed = 1f;
     [SerializeField] private float speedChangeRate = 1f;
     
     private float walkSpeed;
@@ -67,6 +67,24 @@ public class NPC_Movement : MonoBehaviour
         {
             animator.CrossFade("Idle", 0.5f);
             isWalking = false;
+        }
+    }
+
+    private void GoToHouse()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, housePosition.position, walkSpeed * Time.fixedDeltaTime);
+        if (Vector3.Distance(transform.position, housePosition.position) < 0.1f)
+        {
+            StopWalking();
+        }
+    }
+
+    private void GoToEntrance()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, entrancePosition.position, walkSpeed * Time.fixedDeltaTime);
+        if (Vector3.Distance(transform.position, entrancePosition.position) < 0.1f)
+        {
+            StopWalking();
         }
     }
 }
