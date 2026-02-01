@@ -2,12 +2,14 @@ using Assets.Scripts.NPCs;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class NPC_Selectable : MonoBehaviour
 {
-    public MaskData equippedMask;
+
     public SpriteRenderer maskOverlay;
+    public CharacterController characterController;
 
     public void OnMouseDown()
     {
@@ -21,14 +23,14 @@ public class NPC_Selectable : MonoBehaviour
 
     }
 
-    public void EquipMask(MaskData mask)
+    public void EquipMask(MaskController mask)
     {
-        equippedMask = mask;
-        maskOverlay.sprite = mask.Sprite;
+        PlayerController.Instance.AttachMaskToCharacter(mask, characterController);
+        maskOverlay.sprite = mask.Data.Sprite;
     }
 
     public void UnequipMask()
     {
-        equippedMask = null;
+        PlayerController.Instance.RemoveMaskFromCharacter(characterController);
     }
 }

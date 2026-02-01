@@ -9,7 +9,7 @@ public class RaidPlanningUIController : MonoBehaviour
     public GameObject maskEntryPrefab;
     public GameObject StartButton;
 
-    public MaskData[] avialableMask;
+    public MaskController[] avialableMask;
 
     public List<MaskEntryController> currentMaskEntries;
 
@@ -36,16 +36,25 @@ public class RaidPlanningUIController : MonoBehaviour
         }
         currentMaskEntries = new List<MaskEntryController>();
 
-        foreach (MaskData mask in avialableMask)
+        var availableMasks = PlayerController.Instance.UnassignedMasks;
+        availableMasks.Add(NPC.characterController.Mask);
+
+        foreach (MaskController mask in availableMasks)
         {
+            if (mask == null)
+                continue;
+
+            if (mask.Data == null)
+                continue;
+
             var newMaskObject = Instantiate(maskEntryPrefab, maskContainer.transform);
             MaskEntryController newMaskEntry = newMaskObject.GetComponent<MaskEntryController>();
 
             currentMaskEntries.Add(newMaskEntry);
-            newMaskEntry.init(mask);
+            newMaskEntry.init(mask.Data);
             newMaskEntry.onMaskSelected += OnMaskSelected;
 
-            if (NPC.equippedMask == mask)
+            if (NPC.characterController.Mask == mask.Data)
             {
                 newMaskEntry.bIsSelected = true;
                 newMaskEntry.UpdateSelected();

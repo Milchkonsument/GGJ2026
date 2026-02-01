@@ -66,7 +66,7 @@ public class MaskEntryController : MonoBehaviour, IPointerClickHandler
             return;
 
 
-        NPC.EquipMask(maskData);
+        NPC.EquipMask(NPC.characterController.Mask);
 
         onMaskSelected(this);
     }

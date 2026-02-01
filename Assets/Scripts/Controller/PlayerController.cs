@@ -47,6 +47,16 @@ class PlayerController : Singleton<PlayerController>
         }
     }
 
+    public void RemoveMaskFromCharacter(CharacterController character)
+    {
+        if (PartyMembers.Contains(character))
+        {
+            UnassignedMasks.Add(character.Mask);
+            character.Mask = null;
+        }
+    }
+
+
     public List<MaskController> GetActiveMasks() => PartyMembers.Select(m => m.Mask).NotNull().ToList();
 
     public List<(FactionData, int)> GetActiveFactionsAndCount()

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3522092562895171330}
   - component: {fileID: 2216965164011599999}
   - component: {fileID: 2476569006682529178}
+  - component: {fileID: 4711214976450537637}
   m_Layer: 0
   m_Name: MuscleKid
   m_TagString: Kid
@@ -147,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 226ba0f3322986943adf03960fc863ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC_InteractableComponent
-  equippedMask: {fileID: 0}
   maskOverlay: {fileID: 2105776899129363022}
+  characterController: {fileID: 4711214976450537637}
 --- !u!61 &2476569006682529178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -195,6 +196,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.32, y: 0.48}
   m_EdgeRadius: 0
+--- !u!114 &4711214976450537637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2880604579355214982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50aeae044644f1540b763aa133397bda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterController
+  CurrentMotivation: 0
+  Data: {fileID: 11400000, guid: 668d3a4e24813274789f4f1ef1c6ecfb, type: 2}
+  Mask: {fileID: 0}
+  CurrentCombatStacks: 0
 --- !u!1 &4795875053552722262
 GameObject:
   m_ObjectHideFlags: 0
