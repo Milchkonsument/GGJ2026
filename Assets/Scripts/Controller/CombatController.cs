@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 
 public class CombatController : Singleton<CombatController>
@@ -36,11 +37,19 @@ public class CombatController : Singleton<CombatController>
         }
 
         PlayerController.Instance.PartyMembers.ForEach(m => m.ResetCombatStacks());
+        var r = UnityEngine.Random.Range(0, 100);
+        var randomMask = (MaskController)null;
+
+        if (r < 25)
+        {
+            randomMask = ResourceLoader.Masks.CreateRandomMask();
+        }
 
         OnCombatEnd.Invoke(new FightResult()
         {
-            isWin = playerParty.Any(m => m.IsAlive()),
-            lootedCandies = lootedCandies,
+            IsWin = playerParty.Any(m => m.IsAlive()),
+            LootedCandies = lootedCandies,
+            Mask = randomMask
         });
 }
 
@@ -98,6 +107,7 @@ public class EnemyAttackEvent
 
 public class FightResult
 {
-    public List<CandyData> lootedCandies = new();
-    public bool isWin;
+    public List<CandyData> LootedCandies = new();
+    public MaskController Mask;
+    public bool IsWin;
 }
