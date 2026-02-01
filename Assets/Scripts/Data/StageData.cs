@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewStage", menuName = "Scriptable Objects/Stage Data")]
-class StageData : ScriptableObject
+public class StageData : ScriptableObject
 {
     public string StageName;
     public Sprite BackgroundImage;

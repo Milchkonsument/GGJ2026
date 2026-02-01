@@ -34,10 +34,10 @@ public class DummyCombat : MonoBehaviour
         {
             Debug.Log("Combat Started!");
         });
-        
-            CombatController.Instance.OnCombatEnd.AddListener(() =>
+
+            CombatController.Instance.OnCombatEnd.AddListener((result) =>
             {
-                Debug.Log($"Combat Ended! Victory: {PlayerController.Instance.PartyMembers.Any(c => c.IsAlive())}");
+                Debug.Log($"Combat Ended! Victory: {result.isWin}");
                 Debug.Log("Surviving Party Members:");
                 foreach (var member in PlayerController.Instance.PartyMembers.Where(c => c.IsAlive()))
                 {
@@ -47,6 +47,12 @@ public class DummyCombat : MonoBehaviour
                 foreach (var enemy in EnemyControllers.Where(e => e.IsAlive()))
                 {
                     Debug.Log($"- {enemy.Data.Name} with {enemy.CurrentMotivation}/{enemy.GetCurrentMaxMotivation()} Motivation");
+                }
+
+                Debug.Log("Looted Candies:");
+                foreach (var candy in result.lootedCandies)
+                {
+                    Debug.Log($"- {candy.name} (Rarity: {candy.Rarity.name})");
                 }
             });
 
