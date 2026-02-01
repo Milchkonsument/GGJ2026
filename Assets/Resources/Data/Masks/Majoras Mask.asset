@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Majoras Mask
   m_EditorClassIdentifier: Assembly-CSharp::MaskData
   Name: Majoras Mask
-  Sprite: {fileID: 0}
+  Sprite: {fileID: -4871358337496545984, guid: cb6a1a3572a1a1845be5c9a5a4245086, type: 3}
   Faction: {fileID: 11400000, guid: 483b711115d88ec48ac17f799fa95fa8, type: 2}
   Traits:
   - {fileID: 11400000, guid: c3aa51700f10d4f44867fe5bb17cfac2, type: 2}

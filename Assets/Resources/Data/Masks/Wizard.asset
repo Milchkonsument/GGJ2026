@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wizard
   m_EditorClassIdentifier: Assembly-CSharp::MaskData
   Name: Wizard
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 1720242842162135932, guid: cb6a1a3572a1a1845be5c9a5a4245086, type: 3}
   Faction: {fileID: 11400000, guid: e7f2053ca9fc8c045b00b62d37bd3c4e, type: 2}
   Traits:
   - {fileID: 11400000, guid: 6bc7846fe9f35d044b51c182acf71f2d, type: 2}
