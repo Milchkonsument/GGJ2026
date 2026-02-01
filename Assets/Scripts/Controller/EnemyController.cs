@@ -4,16 +4,11 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public EnemyData Data;
-    [HideInInspector]
-    public int CurrentMotivation = 0;
+    public int CurrentMotivation = 20;
 
     public bool IsAlive() => CurrentMotivation > 0;
     public bool IsDead() => !IsAlive();
 
-    private void Awake()
-    {
-        CurrentMotivation = Data.BaseStats.BaseMotivation;
-    }
 
     public int GetCurrentMaxMotivation()
     {

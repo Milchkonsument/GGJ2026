@@ -1,9 +1,14 @@
+using System;
+using NUnit.Framework.Constraints;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
+    [SerializeField] private GameObject audio1;
+    [SerializeField] private GameObject audio2;
 
     private void Awake()
     {
@@ -16,6 +21,21 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnEnable()
+    {
+        CombatController.Instance.OnCombatStart.AddListener(() =>
+        {
+            audio1.SetActive(false);
+            audio2.SetActive(true);
+        });
+
+        CombatController.Instance.OnCombatEnd.AddListener((e) =>
+        {
+            audio1.SetActive(true);
+            audio2.SetActive(false);
+        });
     }
 
     [SerializeField] private AudioMixer audioMixer;

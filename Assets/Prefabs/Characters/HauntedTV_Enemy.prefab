@@ -105,4 +105,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   Data: {fileID: 11400000, guid: 824e6c08f86f04a6a978912dbaca9478, type: 2}
-  CurrentMotivation: 0
+  CurrentMotivation: 20

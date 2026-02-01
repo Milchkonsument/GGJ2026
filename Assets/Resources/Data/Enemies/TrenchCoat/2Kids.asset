@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 2Kids
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   Name: 
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 6856981692816858228, guid: e213f1e3d0e5dd34f8fef077ae84cb2c, type: 3}
   BaseStats: {fileID: 0}
-  DropTable: []
+  Drops: []
   DamageClip: {fileID: 0}
   DeathClip: {fileID: 0}
   AttackClip: {fileID: 0}

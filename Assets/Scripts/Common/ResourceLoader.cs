@@ -97,6 +97,25 @@ public static class ResourceLoader
         }
     }
 
+    public static class Houses
+    {
+        public static readonly string DATA_PATH = "Data/Houses/";
+
+        public static HouseController CreateRandomHouse()
+        {
+            var houseDataFiles = Resources.LoadAll<HouseData>(DATA_PATH);
+            var randomIndex = Random.Range(0, houseDataFiles.Length);
+            var houseData = houseDataFiles[randomIndex];
+
+            var houseGameObject = new GameObject(houseData.HouseName);
+            var houseController = houseGameObject.AddComponent<HouseController>();
+            houseController.Data = houseData;
+
+            return houseController;
+        }
+    }
+
+
     public static class UI
     {
         public static readonly string PREFAB_PATH = "UI/";

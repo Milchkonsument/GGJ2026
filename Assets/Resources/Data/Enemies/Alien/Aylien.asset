@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Aylien
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   Name: Aylien
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 2094686490042798217, guid: cf72d82bf4b57994f8edbcfcfe0a54cf, type: 3}
   BaseStats: {fileID: 11400000, guid: 827e6f614de754c7aa0000c09d550cf2, type: 2}
-  DropTable: []
+  Drops: []
   DamageClip: {fileID: 0}
   DeathClip: {fileID: 0}
   AttackClip: {fileID: 0}

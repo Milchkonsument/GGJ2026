@@ -58,7 +58,7 @@ public class CombatOverlayUI : MonoBehaviour
             InstantiateCombatPanelForCharacter(character);
         }
 
-        foreach (var enemy in GameController.Instance.GetCurrentHouse().Enemies)
+        foreach (var enemy in CombatController.Instance.CurrentEnemies)
         {
             InstantiateCombatPanelForEnemy(enemy);
         }

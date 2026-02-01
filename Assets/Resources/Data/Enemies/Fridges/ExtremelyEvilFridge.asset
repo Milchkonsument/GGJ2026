@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ExtremelyEvilFridge
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   Name: Extremely Evil Fridge
-  Sprite: {fileID: 0}
+  Sprite: {fileID: -787681131013791189, guid: fe35f23f6adb7d04ab7ca7be26569ced, type: 3}
   BaseStats: {fileID: 11400000, guid: 28e70f88561224becba4e73d6de36e3d, type: 2}
-  DropTable: []
+  Drops: []
   DamageClip: {fileID: 0}
   DeathClip: {fileID: 0}
   AttackClip: {fileID: 0}

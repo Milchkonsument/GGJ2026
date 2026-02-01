@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: 4Rat
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   Name: Four Rats
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 6000252970925195536, guid: 5d3e41dfab2d3df44ac1cd67634cca10, type: 3}
   BaseStats: {fileID: 11400000, guid: 79c9ea2bf6d4642ac8e8224d45478ddf, type: 2}
-  DropTable: []
+  Drops: []
   DamageClip: {fileID: 0}
   DeathClip: {fileID: 0}
   AttackClip: {fileID: 0}

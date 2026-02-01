@@ -17,9 +17,8 @@ public class CombatPanel : MonoBehaviour
     {
         if (Character != null)
         {
-            image.sprite = Character.GetComponent<SpriteRenderer>().sprite;
+            image.sprite = Character.Data.Sprite;
             nameText.text = Character.Data.Name;
-            healthSlider.value = (float)Character.CurrentMotivation / Character.GetCurrentMaxMotivation();
             healthSlider.fillRect.GetComponent<Image>().color = Color.skyBlue;
             healthSlider.maxValue = Character.GetCurrentMaxMotivation();
             healthSlider.minValue = 0;
@@ -27,9 +26,8 @@ public class CombatPanel : MonoBehaviour
         }
         else if (Enemy != null)
         {
-            image.sprite = Enemy.GetComponent<SpriteRenderer>().sprite;
+            image.sprite = Enemy.Data.Sprite;
             nameText.text = Enemy.Data.Name;
-            healthSlider.value = (float)Enemy.CurrentMotivation / Enemy.GetCurrentMaxMotivation();
             healthSlider.fillRect.GetComponent<Image>().color = Color.softRed;
             healthSlider.maxValue = Enemy.GetCurrentMaxMotivation();
             healthSlider.minValue = 0;

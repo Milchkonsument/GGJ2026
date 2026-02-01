@@ -17,13 +17,17 @@ public class CombatController : Singleton<CombatController>
     public readonly UnityEvent OnCombatStart = new();
     public readonly UnityEvent<FightResult> OnCombatEnd = new();
 
+    public List<EnemyController> CurrentEnemies = new();
+
     public void FightAgainst(List<EnemyController> enemies)
     {
+        CurrentEnemies = enemies;
         StartCoroutine(FightAgainstCoroutine(enemies));
     }
 
     private IEnumerator FightAgainstCoroutine(List<EnemyController> enemies)
     {
+        Debug.Log("Start Combat");
         OnCombatStart.Invoke();
 
         var tickInterval = new WaitForSeconds(CombatTickRate);
@@ -33,6 +37,7 @@ public class CombatController : Singleton<CombatController>
         while(playerParty.Any(m => m.IsAlive() ) && enemies.Any(e => e.IsAlive()))
         {
             yield return tickInterval;
+            Debug.Log("Combat Tick");
             lootedCandies.AddRange(PerformCombatTick(enemies));
         }
 
@@ -60,6 +65,8 @@ public class CombatController : Singleton<CombatController>
         foreach (var member in PlayerController.Instance.PartyMembers.Where(m => m.IsAlive()))
         {
             var target = enemies.Where(e => e.IsAlive()).GetRandomElement();
+            if(target != null)
+            {
             var outcome = member.Attack(target);
             OnCharacterAttack.Invoke(new CharacterAttackEvent
             {
@@ -72,6 +79,7 @@ public class CombatController : Singleton<CombatController>
             {
                 var drops = target.Data.Drops;
                 lootedCandies.AddRange(drops);
+            }
             }
         }
 

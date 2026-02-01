@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class HouseUIManager : Singleton<HouseUIManager>
     [Header("UI Panels")]
     [SerializeField] private GameObject houseInfoPanel;
     [SerializeField] private GameObject planningPanel;
+    [SerializeField] private GameObject raidPanel;
+    [SerializeField] private GameObject endPanel;
 
     [Header("UI Elements")]
     [SerializeField] private TMP_Text houseNameText;
@@ -26,9 +29,19 @@ public class HouseUIManager : Singleton<HouseUIManager>
         //subcribe to event
     }
 
+    private void OnEnable()
+    {
+        CombatController.Instance.OnCombatEnd.AddListener(_ => 
+        {
+            planningPanel.SetActive(false);
+            raidPanel.SetActive(false);
+            endPanel.SetActive(true);
+        });
+    }
+
     private void OnDisable()
     {
-        //unsubscribe from event
+        CombatController.Instance.OnCombatEnd.RemoveAllListeners();
     }
 
     private void Start()
@@ -70,6 +83,7 @@ public class HouseUIManager : Singleton<HouseUIManager>
     public void StartRaid()
     {
         planningPanel.SetActive(false);
-        //TODO
+        CombatController.Instance.FightAgainst(GameController.Instance.GetCurrentHouse().Enemies.Select(e => Instantiate(e)).ToList());
+        raidPanel.SetActive(true);
     }
 }

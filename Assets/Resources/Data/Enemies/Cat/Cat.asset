@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c067a506789c6944b801cb491a1b07f, type: 3}
   m_Name: Cat
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  Name: 
-  Sprite: {fileID: 0}
+  Name: Evil Being
+  Sprite: {fileID: -2830347313337548390, guid: 2886794727769c64e9990fda80878b87, type: 3}
   BaseStats: {fileID: 0}
-  DropTable: []
+  Drops: []
   DamageClip: {fileID: 0}
   DeathClip: {fileID: 0}
   AttackClip: {fileID: 0}

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterData
   Name: Himbo
   Description: Hasn't eaten anything but candy since two weeks.
-  Sprite: {fileID: 0}
+  HireCost: 0
+  Sprite: {fileID: 6102029041921898186, guid: 33c06d8b9e18b74409cded466e637fa1, type: 3}
   DamageClip: {fileID: 0}
   DeathClip: {fileID: 0}
   AttackClip: {fileID: 0}
