@@ -7,6 +7,10 @@ using UnityEngine.UI;
 
 public class HouseUIManager : Singleton<HouseUIManager>
 {
+    [Header("UI Panels")]
+    [SerializeField] private GameObject houseInfoPanel;
+    [SerializeField] private GameObject planningPanel;
+
     [Header("UI Elements")]
     [SerializeField] private TMP_Text houseNameText;
     [SerializeField] private Image houseSprite;
@@ -59,5 +63,13 @@ public class HouseUIManager : Singleton<HouseUIManager>
     {
         Debug.Log("Planning Started");
         OnPlanningStarted?.Invoke();
+        houseInfoPanel.SetActive(false);
+        planningPanel.SetActive(true);
+    }
+
+    public void StartRaid()
+    {
+        planningPanel.SetActive(false);
+        //TODO
     }
 }
