@@ -75,6 +75,9 @@ public class GameController : Singleton<GameController>
 
     public HouseData GetCurrentHouse()
     {
+        Debug.Log("CurrentStageIndex: " + _currentStageIndex);
+        Debug.Log("GameData: " + gameData);
+        
         var stage = GetCurrentStage();
         if (_isBossRoom)
         {

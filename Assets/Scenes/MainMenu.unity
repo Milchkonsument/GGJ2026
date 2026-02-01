@@ -798,6 +798,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238061358}
   m_CullTransparentMesh: 1
+--- !u!4 &265402160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5622706420598388518, guid: c399a88cf217d0f468cf2b48f4db3887, type: 3}
+  m_PrefabInstance: {fileID: 765773314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &266261274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,7 +2582,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5622706420598388518, guid: c399a88cf217d0f468cf2b48f4db3887, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 803905438}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c399a88cf217d0f468cf2b48f4db3887, type: 3}
 --- !u!1 &781788402
@@ -2803,6 +2811,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 783805458}
   m_CullTransparentMesh: 1
+--- !u!1 &803905437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 803905438}
+  - component: {fileID: 803905439}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &803905438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803905437}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 265402160}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &803905439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803905437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0284318f0614a834b8adf4168ff1c117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameController
+  gameData: {fileID: 11400000, guid: 5e60ffa37395c5f499992799ee80b742, type: 2}
 --- !u!1 &865270821
 GameObject:
   m_ObjectHideFlags: 0

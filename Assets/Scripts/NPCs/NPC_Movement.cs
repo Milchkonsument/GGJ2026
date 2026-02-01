@@ -1,3 +1,4 @@
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -15,7 +16,17 @@ public class NPC_Movement : MonoBehaviour
     private float walkSpeed;
     private bool increasing = false;
     private Animator animator;
-    private bool isWalking;
+    private bool isWalking = true;
+
+    private void OnEnable()
+    {
+        HouseUIManager.OnPlanningStarted += StopWalking;
+    }
+
+    private void OnDisable()
+    {
+        HouseUIManager.OnPlanningStarted -= StopWalking;
+    }
 
     private void Start()
     {
@@ -26,7 +37,7 @@ public class NPC_Movement : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateWalkSpeed();
-        NPCWalk();
+        if(isWalking) NPCWalk();
     }
 
     private void UpdateWalkSpeed()
@@ -54,11 +65,8 @@ public class NPC_Movement : MonoBehaviour
     private void NPCWalk()
     {
         transform.position = new Vector3(transform.position.x + walkSpeed * Time.fixedDeltaTime, transform.position.y, transform.position.z);
-        if(!isWalking)
-        {
-            animator.CrossFade("Walk", 0.5f);
-            isWalking = true;
-        }
+        animator.CrossFade("Walk", 0.5f);
+        isWalking = true;
     }
 
     private void StopWalking()
