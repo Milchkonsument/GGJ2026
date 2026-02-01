@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Paladin
   m_EditorClassIdentifier: Assembly-CSharp::MaskData
   Name: Paladin
-  Sprite: {fileID: 0}
+  Sprite: {fileID: -8088344152588822687, guid: cb6a1a3572a1a1845be5c9a5a4245086, type: 3}
   Faction: {fileID: 11400000, guid: e7f2053ca9fc8c045b00b62d37bd3c4e, type: 2}
   Traits:
   - {fileID: 11400000, guid: eb25ddc4cc2eac942b55c2131b99fdae, type: 2}
